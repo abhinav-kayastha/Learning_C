@@ -9,19 +9,19 @@ int main()
     int selection;
 
     // taking user input for bus ticket, taxi ticket and their balance
-    printf("Enter price for bus ticket (euros):");
+    printf("Enter price for bus ticket (euros): ");
     scanf("%f", &bus_price);
 
-    printf("Enter price for taxi trip (euros):");
+    printf("Enter price for taxi trip (euros): ");
     scanf("%f", &taxi_price);
 
-    printf("Enter how much money you have (euros):");
+    printf("Enter how much money you have (euros): ");
     scanf("%f", &money);
 
     while (money >= bus_price)
     {
         // diplaying bus and taxi price, user balance and taking user input for choice of transport
-        printf("\n(1) Bus: %.2f euros (2) Taxi: %.2f euros\nYour balance is: %.2f euros\nWhat do you want to take?:", bus_price, taxi_price, money);
+        printf("\n(1) Bus: %.2f euros (2) Taxi: %.2f euros\nYour balance is: %.2f euros\nWhat do you want to take?: ", bus_price, taxi_price, money);
         scanf("%d", &selection);
 
         switch (selection) {
