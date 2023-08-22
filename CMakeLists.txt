@@ -4,4 +4,5 @@ project(Learning_C C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Learning_C
-        "Ex 1./1.c")
+        "Ex 1./first_exercise.c"
+        "Ex 1/second_exercise.c")

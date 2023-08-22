@@ -49,8 +49,14 @@ cmake_ninja_workdir = C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/cmake
 
 build cmake_object_order_depends_target_Learning_C: phony || CMakeFiles/Learning_C.dir
 
-build CMakeFiles/Learning_C.dir/Ex_1/1.c.obj: C_COMPILER__Learning_C_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/Ex$ 1/1.c || cmake_object_order_depends_target_Learning_C
-  DEP_FILE = CMakeFiles\Learning_C.dir\Ex_1\1.c.obj.d
+build CMakeFiles/Learning_C.dir/Ex_1/first_exercise.c.obj: C_COMPILER__Learning_C_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/Ex$ 1/first_exercise.c || cmake_object_order_depends_target_Learning_C
+  DEP_FILE = CMakeFiles\Learning_C.dir\Ex_1\first_exercise.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Learning_C.dir
+  OBJECT_FILE_DIR = CMakeFiles\Learning_C.dir\Ex_1
+
+build CMakeFiles/Learning_C.dir/Ex_1/second_exercise.c.obj: C_COMPILER__Learning_C_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/Ex$ 1/second_exercise.c || cmake_object_order_depends_target_Learning_C
+  DEP_FILE = CMakeFiles\Learning_C.dir\Ex_1\second_exercise.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Learning_C.dir
   OBJECT_FILE_DIR = CMakeFiles\Learning_C.dir\Ex_1
@@ -63,7 +69,7 @@ build CMakeFiles/Learning_C.dir/Ex_1/1.c.obj: C_COMPILER__Learning_C_unscanned_D
 #############################################
 # Link the executable Learning_C.exe
 
-build Learning_C.exe: C_EXECUTABLE_LINKER__Learning_C_Debug CMakeFiles/Learning_C.dir/Ex_1/1.c.obj
+build Learning_C.exe: C_EXECUTABLE_LINKER__Learning_C_Debug CMakeFiles/Learning_C.dir/Ex_1/first_exercise.c.obj CMakeFiles/Learning_C.dir/Ex_1/second_exercise.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Learning_C.dir
