@@ -42,5 +42,7 @@ int main()
         printf("\nTaxed income of month %d: %.2f\n", i + 1, tax_salary[i]);
     }
 
+    printf("month\tincome\ttax");
+
     return 0;
 }
