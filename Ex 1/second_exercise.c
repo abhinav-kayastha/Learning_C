@@ -42,9 +42,11 @@ int main()
         // printf("\nTaxed income of month %d: %.2f\n", i + 1, tax_salary[i]);
     }
 
+    printf("Month\tIncome\t   Tax");
+
     for (int j = 0; j < 12; j++)
     {
-        printf("\nMonth: %d\tIncome: %.2f\tTax: %.2f", j + 1, salary[j], tax_salary[j]);
+        printf("\n%5d\t%.2f\t%.2f", j + 1, salary[j], tax_salary[j]);
     }
 
     return 0;
