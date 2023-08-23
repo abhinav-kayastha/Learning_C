@@ -38,11 +38,14 @@ int main()
             tax_salary[i] = (tax_percentage / 100) * salary[i];
         }
 
-        printf("\nSalary of month %d: %.2f: ", i + 1, salary[i]);
-        printf("\nTaxed income of month %d: %.2f\n", i + 1, tax_salary[i]);
+        // printf("\nSalary of month %d: %.2f: ", i + 1, salary[i]);
+        // printf("\nTaxed income of month %d: %.2f\n", i + 1, tax_salary[i]);
     }
 
-    printf("month\tincome\ttax");
+    for (int j = 0; j < 12; j++)
+    {
+        printf("\nMonth: %d\tIncome: %.2f\tTax: %.2f", j + 1, salary[j], tax_salary[j]);
+    }
 
     return 0;
 }
