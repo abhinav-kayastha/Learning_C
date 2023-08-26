@@ -26,23 +26,30 @@ int main()
     {
         printf("\nEnter salary for month %d: ", i + 1);
         scanf("%f", &salary[i]);
-        salary_sum += salary[i];
 
-        if (salary_sum > yearly_limit_salary)
+        if (salary_sum < yearly_limit_salary && salary_sum + salary[i] > yearly_limit_salary)
+        {
+            tax_salary[i] = (((salary_sum + salary[i]) - yearly_limit_salary) * (greater_tax_percentage / 100)) + ((yearly_limit_salary - salary_sum) * (tax_percentage / 100));
+            salary_sum += salary[i];
+        }
+
+        else if (salary_sum + salary[i] > yearly_limit_salary)
         {
             tax_salary[i] = (greater_tax_percentage / 100) * salary[i];
+            salary_sum += salary[i];
         }
 
         else
         {
             tax_salary[i] = (tax_percentage / 100) * salary[i];
+            salary_sum += salary[i];
         }
 
         // printf("\nSalary of month %d: %.2f: ", i + 1, salary[i]);
         // printf("\nTaxed income of month %d: %.2f\n", i + 1, tax_salary[i]);
     }
 
-    printf("Month\tIncome\t   Tax");
+    printf("\nMonth\tIncome\t   Tax");
 
     for (int j = 0; j < 12; j++)
     {
