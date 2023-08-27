@@ -49,7 +49,7 @@ int main()
             }
             else
             {
-                printf("Enter the grade for student %d (0-5 or -1 to skip): ", student_choice);
+                printf("Enter the grade for student %d (0 - 5 or -1 to cancel): ", student_choice);
                 scanf("%d", &student_grade);
                 if (student_grade >= -1 && student_grade <= 5)
                 {
