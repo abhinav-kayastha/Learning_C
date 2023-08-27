@@ -39,7 +39,6 @@ int main()
                     printf("%d\n", student[i]);
                 }
             }
-            return 0; // Exit the program
             break;
         
         default:
