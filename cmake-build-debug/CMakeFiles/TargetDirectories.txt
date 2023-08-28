@@ -1,3 +1,5 @@
-C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug/CMakeFiles/Learning_C.dir
+C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug/CMakeFiles/Ex1.dir
+C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug/CMakeFiles/Ex2.dir
+C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug/CMakeFiles/Ex3.dir
 C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
