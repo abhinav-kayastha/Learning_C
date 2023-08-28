@@ -172,6 +172,39 @@ build Ex4.exe: C_EXECUTABLE_LINKER__Ex4_Debug CMakeFiles/Ex4.dir/4.c.obj
   TARGET_IMPLIB = libEx4.dll.a
   TARGET_PDB = Ex4.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Ex5
+
+
+#############################################
+# Order-only phony target for Ex5
+
+build cmake_object_order_depends_target_Ex5: phony || CMakeFiles/Ex5.dir
+
+build CMakeFiles/Ex5.dir/5.c.obj: C_COMPILER__Ex5_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/5.c || cmake_object_order_depends_target_Ex5
+  DEP_FILE = CMakeFiles\Ex5.dir\5.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Ex5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ex5.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Ex5
+
+
+#############################################
+# Link the executable Ex5.exe
+
+build Ex5.exe: C_EXECUTABLE_LINKER__Ex5_Debug CMakeFiles/Ex5.dir/5.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Ex5.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Ex5.exe
+  TARGET_IMPLIB = libEx5.dll.a
+  TARGET_PDB = Ex5.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -206,6 +239,8 @@ build Ex3: phony Ex3.exe
 
 build Ex4: phony Ex4.exe
 
+build Ex5: phony Ex5.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -214,7 +249,7 @@ build Ex4: phony Ex4.exe
 #############################################
 # Folder: C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug
 
-build all: phony Ex1.exe Ex2.exe Ex3.exe Ex4.exe
+build all: phony Ex1.exe Ex2.exe Ex3.exe Ex4.exe Ex5.exe
 
 # =============================================================================
 # Built-in targets
