@@ -49,11 +49,11 @@ cmake_ninja_workdir = C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/cmake
 
 build cmake_object_order_depends_target_Ex1: phony || CMakeFiles/Ex1.dir
 
-build CMakeFiles/Ex1.dir/Ex_1/first_exercise.c.obj: C_COMPILER__Ex1_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/Ex$ 1/first_exercise.c || cmake_object_order_depends_target_Ex1
-  DEP_FILE = CMakeFiles\Ex1.dir\Ex_1\first_exercise.c.obj.d
+build CMakeFiles/Ex1.dir/1.c.obj: C_COMPILER__Ex1_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/1.c || cmake_object_order_depends_target_Ex1
+  DEP_FILE = CMakeFiles\Ex1.dir\1.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Ex1.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ex1.dir\Ex_1
+  OBJECT_FILE_DIR = CMakeFiles\Ex1.dir
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/Ex1.dir/Ex_1/first_exercise.c.obj: C_COMPILER__Ex1_unscanned_De
 #############################################
 # Link the executable Ex1.exe
 
-build Ex1.exe: C_EXECUTABLE_LINKER__Ex1_Debug CMakeFiles/Ex1.dir/Ex_1/first_exercise.c.obj
+build Ex1.exe: C_EXECUTABLE_LINKER__Ex1_Debug CMakeFiles/Ex1.dir/1.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Ex1.dir
@@ -82,11 +82,11 @@ build Ex1.exe: C_EXECUTABLE_LINKER__Ex1_Debug CMakeFiles/Ex1.dir/Ex_1/first_exer
 
 build cmake_object_order_depends_target_Ex2: phony || CMakeFiles/Ex2.dir
 
-build CMakeFiles/Ex2.dir/Ex_1/second_exercise.c.obj: C_COMPILER__Ex2_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/Ex$ 1/second_exercise.c || cmake_object_order_depends_target_Ex2
-  DEP_FILE = CMakeFiles\Ex2.dir\Ex_1\second_exercise.c.obj.d
+build CMakeFiles/Ex2.dir/2.c.obj: C_COMPILER__Ex2_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/2.c || cmake_object_order_depends_target_Ex2
+  DEP_FILE = CMakeFiles\Ex2.dir\2.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Ex2.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ex2.dir\Ex_1
+  OBJECT_FILE_DIR = CMakeFiles\Ex2.dir
 
 
 # =============================================================================
@@ -96,7 +96,7 @@ build CMakeFiles/Ex2.dir/Ex_1/second_exercise.c.obj: C_COMPILER__Ex2_unscanned_D
 #############################################
 # Link the executable Ex2.exe
 
-build Ex2.exe: C_EXECUTABLE_LINKER__Ex2_Debug CMakeFiles/Ex2.dir/Ex_1/second_exercise.c.obj
+build Ex2.exe: C_EXECUTABLE_LINKER__Ex2_Debug CMakeFiles/Ex2.dir/2.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Ex2.dir
@@ -115,11 +115,11 @@ build Ex2.exe: C_EXECUTABLE_LINKER__Ex2_Debug CMakeFiles/Ex2.dir/Ex_1/second_exe
 
 build cmake_object_order_depends_target_Ex3: phony || CMakeFiles/Ex3.dir
 
-build CMakeFiles/Ex3.dir/Ex_1/third_exercise.c.obj: C_COMPILER__Ex3_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/Ex$ 1/third_exercise.c || cmake_object_order_depends_target_Ex3
-  DEP_FILE = CMakeFiles\Ex3.dir\Ex_1\third_exercise.c.obj.d
+build CMakeFiles/Ex3.dir/3.c.obj: C_COMPILER__Ex3_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/3.c || cmake_object_order_depends_target_Ex3
+  DEP_FILE = CMakeFiles\Ex3.dir\3.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Ex3.dir
-  OBJECT_FILE_DIR = CMakeFiles\Ex3.dir\Ex_1
+  OBJECT_FILE_DIR = CMakeFiles\Ex3.dir
 
 
 # =============================================================================
@@ -129,7 +129,7 @@ build CMakeFiles/Ex3.dir/Ex_1/third_exercise.c.obj: C_COMPILER__Ex3_unscanned_De
 #############################################
 # Link the executable Ex3.exe
 
-build Ex3.exe: C_EXECUTABLE_LINKER__Ex3_Debug CMakeFiles/Ex3.dir/Ex_1/third_exercise.c.obj
+build Ex3.exe: C_EXECUTABLE_LINKER__Ex3_Debug CMakeFiles/Ex3.dir/3.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Ex3.dir
@@ -138,6 +138,39 @@ build Ex3.exe: C_EXECUTABLE_LINKER__Ex3_Debug CMakeFiles/Ex3.dir/Ex_1/third_exer
   TARGET_FILE = Ex3.exe
   TARGET_IMPLIB = libEx3.dll.a
   TARGET_PDB = Ex3.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Ex4
+
+
+#############################################
+# Order-only phony target for Ex4
+
+build cmake_object_order_depends_target_Ex4: phony || CMakeFiles/Ex4.dir
+
+build CMakeFiles/Ex4.dir/4.c.obj: C_COMPILER__Ex4_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/4.c || cmake_object_order_depends_target_Ex4
+  DEP_FILE = CMakeFiles\Ex4.dir\4.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Ex4.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ex4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Ex4
+
+
+#############################################
+# Link the executable Ex4.exe
+
+build Ex4.exe: C_EXECUTABLE_LINKER__Ex4_Debug CMakeFiles/Ex4.dir/4.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Ex4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Ex4.exe
+  TARGET_IMPLIB = libEx4.dll.a
+  TARGET_PDB = Ex4.exe.dbg
 
 
 #############################################
@@ -171,6 +204,8 @@ build Ex2: phony Ex2.exe
 
 build Ex3: phony Ex3.exe
 
+build Ex4: phony Ex4.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +214,7 @@ build Ex3: phony Ex3.exe
 #############################################
 # Folder: C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug
 
-build all: phony Ex1.exe Ex2.exe Ex3.exe
+build all: phony Ex1.exe Ex2.exe Ex3.exe Ex4.exe
 
 # =============================================================================
 # Built-in targets
