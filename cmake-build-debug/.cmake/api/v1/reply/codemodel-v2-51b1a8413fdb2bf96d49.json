@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Learning_C",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Ex1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ex1-Debug-8bc812af93bd6c5d0b9a.json",
+					"name" : "Ex1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ex2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ex2-Debug-54cb5557d4b2245e9b76.json",
+					"name" : "Ex2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ex3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ex3-Debug-88d364a5f73ed41e42ae.json",
+					"name" : "Ex3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Ex4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ex4-Debug-c78fa02bdea73e838fb4.json",
+					"name" : "Ex4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug",
+		"source" : "C:/Users/Abhinav Kayastha/CLionProjects/Learning_C"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
