@@ -41,6 +41,39 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target Test
+
+
+#############################################
+# Order-only phony target for Test
+
+build cmake_object_order_depends_target_Test: phony || CMakeFiles/Test.dir
+
+build CMakeFiles/Test.dir/test.c.obj: C_COMPILER__Test_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/test.c || cmake_object_order_depends_target_Test
+  DEP_FILE = CMakeFiles\Test.dir\test.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Test.dir
+  OBJECT_FILE_DIR = CMakeFiles\Test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Test
+
+
+#############################################
+# Link the executable Test.exe
+
+build Test.exe: C_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/test.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Test.exe
+  TARGET_IMPLIB = libTest.dll.a
+  TARGET_PDB = Test.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Ex1
 
 
@@ -276,6 +309,8 @@ build Ex5: phony Ex5.exe
 
 build Ex6: phony Ex6.exe
 
+build Test: phony Test.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -284,7 +319,7 @@ build Ex6: phony Ex6.exe
 #############################################
 # Folder: C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug
 
-build all: phony Ex1.exe Ex2.exe Ex3.exe Ex4.exe Ex5.exe Ex6.exe
+build all: phony Test.exe Ex1.exe Ex2.exe Ex3.exe Ex4.exe Ex5.exe Ex6.exe
 
 # =============================================================================
 # Built-in targets

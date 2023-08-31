@@ -3,6 +3,7 @@ project(Learning_C C)
 
 set(CMAKE_C_STANDARD 11)
 
+add_executable(Test "test.c")
 add_executable(Ex1 "1.c")
 add_executable(Ex2 "2.c")
 add_executable(Ex3 "3.c")
