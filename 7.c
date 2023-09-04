@@ -9,6 +9,7 @@ bool read_positive(int *value)
 
     if (scanf("%d", &num) == 0)
     {
+        while(getchar() != '\n');
         return false;
     }
 

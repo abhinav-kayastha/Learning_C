@@ -28,7 +28,11 @@ int main()
     {
         int choice = 0;
         printf("- Roll D6 (6)\n- Roll D10 (10)\n- Quit (-1)\nSelect Operation: ");
-        scanf("%d", &choice);
+
+        if (scanf("%d", &choice) == 0)
+        {
+            while(getchar() != '\n');
+        }
 
         switch (choice) {
             case 6:
