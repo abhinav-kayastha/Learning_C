@@ -21,5 +21,10 @@ int main()
 
     int nums[15];
 
+    for (int i = 0; i < 15; i++)
+    {
+        nums[i] = rand();
+    }
+
     print_numbers(nums, 15);
 }
