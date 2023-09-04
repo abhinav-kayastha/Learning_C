@@ -6,7 +6,11 @@ bool read_positive(int *value)
     int num;
 
     printf("Enter a positive number: ");
-    scanf("%d", &num);
+
+    if (scanf("%d", &num) == 0)
+    {
+        return false;
+    }
 
     if (num > 0)
     {

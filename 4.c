@@ -8,7 +8,12 @@ int read_integer(void)
 {
     float num;
     printf("\nEnter a positive integer or negative number to quit: ");
-    scanf("%f", &num);
+
+    if (scanf("%f", &num) != 1)
+    {
+        while(getchar() != '\n');
+        printf("Incorrect input.");
+    }
 
     return num;
 }
