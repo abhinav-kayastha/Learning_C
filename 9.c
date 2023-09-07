@@ -49,6 +49,8 @@ int main ()
         if (scanf("%d", &choice) == 0)
         {
             while(getchar() != '\n');
+            printf("Incorrect input try again.");
+            continue;
         }
 
         if (choice == 0)
