@@ -6,7 +6,6 @@
 #include "stdio.h"
 #include "string.h"
 #define LINESIZE 80
-#define FILESIZE 50
 
 int main()
 {
@@ -22,7 +21,6 @@ int main()
 
     filename[strcspn(filename, "\n")] = 0;
 
-    printf("%s", filename);
     FILE *user_file;
 
     user_file = fopen(filename, "r");
