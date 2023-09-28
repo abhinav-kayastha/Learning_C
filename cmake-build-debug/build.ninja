@@ -568,6 +568,39 @@ build Ex15.exe: C_EXECUTABLE_LINKER__Ex15_Debug CMakeFiles/Ex15.dir/15.c.obj
   TARGET_IMPLIB = libEx15.dll.a
   TARGET_PDB = Ex15.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Ex16
+
+
+#############################################
+# Order-only phony target for Ex16
+
+build cmake_object_order_depends_target_Ex16: phony || CMakeFiles/Ex16.dir
+
+build CMakeFiles/Ex16.dir/16.c.obj: C_COMPILER__Ex16_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/16.c || cmake_object_order_depends_target_Ex16
+  DEP_FILE = CMakeFiles\Ex16.dir\16.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Ex16.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ex16.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Ex16
+
+
+#############################################
+# Link the executable Ex16.exe
+
+build Ex16.exe: C_EXECUTABLE_LINKER__Ex16_Debug CMakeFiles/Ex16.dir/16.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Ex16.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Ex16.exe
+  TARGET_IMPLIB = libEx16.dll.a
+  TARGET_PDB = Ex16.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -608,6 +641,8 @@ build Ex14: phony Ex14.exe
 
 build Ex15: phony Ex15.exe
 
+build Ex16: phony Ex16.exe
+
 build Ex2: phony Ex2.exe
 
 build Ex3: phony Ex3.exe
@@ -634,7 +669,7 @@ build Test: phony Test.exe
 #############################################
 # Folder: C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug
 
-build all: phony Test.exe Ex1.exe Ex2.exe Ex3.exe Ex4.exe Ex5.exe Ex6.exe Ex7.exe Ex8.exe Ex9.exe Ex10.exe Ex11.exe Ex12.exe Ex13.exe Ex14.exe Ex15.exe
+build all: phony Test.exe Ex1.exe Ex2.exe Ex3.exe Ex4.exe Ex5.exe Ex6.exe Ex7.exe Ex8.exe Ex9.exe Ex10.exe Ex11.exe Ex12.exe Ex13.exe Ex14.exe Ex15.exe Ex16.exe
 
 # =============================================================================
 # Built-in targets
