@@ -33,7 +33,7 @@ bool pass_gen(char *password, int size, const char *word)
 
             do
             {
-                random_char = rand() % 127;
+                random_char = rand() % 255;
             }
             while (!isprint(random_char));
             password[i - 1] = random_char;
