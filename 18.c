@@ -13,20 +13,24 @@ int main()
         srand(time(NULL));
 
         int num;
-        int random_num = rand() % 16;
-        int hex_num;
+        int random_num = rand();
+        int shifted_hex_num;
 
         printf("\nEnter a number between 0-15, or negative number to quit: ");
         scanf("%d", &num);
 
         if (num < 0 || num > 15)
         {
+            printf("Exiting.");
             break;
         }
 
         else
         {
-            printf("%d in Hexadecimal form is: %X\n", num, num);
+            printf("%d in Hexadecimal form is: 0x%X\n", num, num);
+            shifted_hex_num = random_num >> num;
+            shifted_hex_num = shifted_hex_num & 0x3F;
+            printf("The shifted Hexadecimal number is: 0x%X\n", shifted_hex_num);
         }
     }
 
