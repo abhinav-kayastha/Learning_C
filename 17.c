@@ -29,7 +29,12 @@ bool pass_gen(char *password, int size, const char *word)
 
         else
         {
-            password[i - 1] = rand() % 127;
+
+
+            if (isprint(rand() % 127) != 0)
+            {
+                password[i - 1] = rand() % 127;
+            }
         }
     }
 
