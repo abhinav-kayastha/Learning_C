@@ -667,6 +667,39 @@ build Ex18.exe: C_EXECUTABLE_LINKER__Ex18_Debug CMakeFiles/Ex18.dir/18.c.obj
   TARGET_IMPLIB = libEx18.dll.a
   TARGET_PDB = Ex18.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Ex19
+
+
+#############################################
+# Order-only phony target for Ex19
+
+build cmake_object_order_depends_target_Ex19: phony || CMakeFiles/Ex19.dir
+
+build CMakeFiles/Ex19.dir/19.c.obj: C_COMPILER__Ex19_unscanned_Debug C$:/Users/Abhinav$ Kayastha/CLionProjects/Learning_C/19.c || cmake_object_order_depends_target_Ex19
+  DEP_FILE = CMakeFiles\Ex19.dir\19.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Ex19.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ex19.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Ex19
+
+
+#############################################
+# Link the executable Ex19.exe
+
+build Ex19.exe: C_EXECUTABLE_LINKER__Ex19_Debug CMakeFiles/Ex19.dir/19.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Ex19.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Ex19.exe
+  TARGET_IMPLIB = libEx19.dll.a
+  TARGET_PDB = Ex19.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -713,6 +746,8 @@ build Ex17: phony Ex17.exe
 
 build Ex18: phony Ex18.exe
 
+build Ex19: phony Ex19.exe
+
 build Ex2: phony Ex2.exe
 
 build Ex3: phony Ex3.exe
@@ -739,7 +774,7 @@ build Test: phony Test.exe
 #############################################
 # Folder: C:/Users/Abhinav Kayastha/CLionProjects/Learning_C/cmake-build-debug
 
-build all: phony Test.exe Ex1.exe Ex2.exe Ex3.exe Ex4.exe Ex5.exe Ex6.exe Ex7.exe Ex8.exe Ex9.exe Ex10.exe Ex11.exe Ex12.exe Ex13.exe Ex14.exe Ex15.exe Ex16.exe Ex17.exe Ex18.exe
+build all: phony Test.exe Ex1.exe Ex2.exe Ex3.exe Ex4.exe Ex5.exe Ex6.exe Ex7.exe Ex8.exe Ex9.exe Ex10.exe Ex11.exe Ex12.exe Ex13.exe Ex14.exe Ex15.exe Ex16.exe Ex17.exe Ex18.exe Ex19.exe
 
 # =============================================================================
 # Built-in targets
